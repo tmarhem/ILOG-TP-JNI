@@ -1,0 +1,12 @@
+<project default="makejavaheaders" basedir=".">
+
+	<target name="makejavaheaders">
+		<javah destdir="../HelloNative">
+			<classpath>
+				<pathelement location="bin"/>
+			</classpath>
+			<class name="fr.imtld.ilog.DisplayLine" />
+		</javah>
+	</target>
+
+</project>
